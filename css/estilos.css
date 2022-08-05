@@ -1,0 +1,409 @@
+html,
+body {
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif;
+}
+
+
+.menu {
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+
+.logo {
+    width: 60px;
+    margin: auto;
+}
+
+.menu img {
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    column-gap: 10px;
+}  
+
+.menu-contenido {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+.section-uno {
+    background-color: white;
+    color: black;
+}
+
+.titulo-uno {
+    font-size: 20px;
+    background-color: #232975;
+    text-align: center;
+    margin: auto;
+}
+
+.imagen-uno img {
+    width: 100%;
+}
+
+.titulo-dos { 
+    font-size: 15px;
+    text-align: center;
+}
+
+.parrafo-uno {
+    font-size: 15px;
+    line-height: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+
+.section-dos {
+    background-color: #232975;
+    color: white;
+}
+
+.titulo-tres {
+    text-align: center;
+    font-size: 18px;
+}
+
+.section-dos ul {
+    font-size: 15px;
+    list-style-type: none;
+    line-height: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+.section-tres {
+    background-color: white;
+    color: black;
+    font-size: 17px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "titulo imagen"
+                        "servicio imagen";
+}
+
+.section-tres > div {
+    display: flex;
+    align-items: center;
+}
+
+.grid1 {
+    grid-area: titulo;
+}
+
+.grid2 {
+    grid-area: servicio;
+}
+
+.grid3 {
+    grid-area: imagen;
+}
+
+
+.section-tres ul {
+    font-size: 17px;
+    list-style-type: square;
+}
+
+
+
+@media (min-width: 767px) {
+    .menu-contenido {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    
+    .titulo-dos { 
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .parrafo-uno {
+        font-size: 15px;
+        line-height: 17px;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .section-tres {
+        background-color: white;
+        color: black;
+        font-size: 17px;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "titulo imagen"
+                            "servicio imagen";
+    }
+    
+    .section-dos ul {
+        font-size: 15px;
+        list-style-type: none;
+        line-height: 17px;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    }
+}    
+
+@media (min-width: 992px) {
+    .menu-contenido {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    
+    .titulo-dos { 
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .parrafo-uno {
+        font-size: 15px;
+        line-height: 17px;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .section-tres {
+        background-color: white;
+        color: black;
+        font-size: 17px;
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "titulo imagen"
+                            "servicio imagen";
+    }
+    
+    .section-dos ul {
+        font-size: 15px;
+        list-style-type: none;
+        line-height: 17px;
+        width: 100%;
+        max-width: 660px;
+        margin: auto;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .menu-contenido {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    
+    .titulo-dos { 
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .parrafo-uno {
+        font-size: 15px;
+        line-height: 17px;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .section-tres {
+        background-color: white;
+        color: black;
+        font-size: 17px;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "titulo imagen"
+                            "servicio imagen";
+    }
+    
+    .section-dos ul {
+        font-size: 15px;
+        list-style-type: none;
+        line-height: 17px;
+        width: 100%;
+        max-width: 860px;
+        margin: auto;
+    }
+}
+
+
+
+
+
+.section-productos {
+    background-color: black;
+}
+
+.titulo-productos {
+    background-color: #232975;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+
+.productos {
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.productos li {
+    list-style-type: square;
+}
+
+
+
+
+
+
+.alquiler {
+    background-color: white;
+}
+
+.alquiler-titulo {
+    background-color: #232975;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+
+.alquiler-productos {
+    background-color: white;
+    color: black;
+    display: flex;
+}
+
+.alquiler-productos li {
+    list-style-type: square;
+}
+
+
+
+
+.nosotros {
+    background-color: #232975;
+}
+
+.quienes {
+    text-align: center;
+    font-size: 17px;
+    color: white;
+}
+
+.nosotros-uno {
+    color: white;
+    font-size: 17px;
+}
+
+
+
+
+
+
+.contacto {
+    background-color: wheat;
+}
+
+.contacto-titulo {
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
+
+.contacto-todo {
+    display: flex;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.contacto-info li {
+    list-style-type: square;
+}
+
+
+
+
+
+
+footer {
+    background-color: black;
+    color: white; 
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
