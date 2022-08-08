@@ -8,8 +8,8 @@ font-family: 'Roboto', sans-serif;
 
 .menu {
     width: 100%;
-    background-color: black;
     display: flex;
+    background-image: linear-gradient(to left, black 0%, black 35%, transparent 100%);
 }
 
 .logo {
@@ -24,6 +24,7 @@ font-family: 'Roboto', sans-serif;
 .menu ul {
     display: flex;
     column-gap: 10px;
+    list-style: none;
 }  
 
 .menu-contenido {
@@ -56,7 +57,12 @@ nav a {
 }
 
 .imagen-uno img {
+    transition:all 0.2s ease-in-out;
     width: 100%;
+}
+
+.imagen-uno img:hover {
+    transform: rotate(-12deg) scale(1.2);
 }
 
 .titulo-dos { 
@@ -85,11 +91,20 @@ nav a {
 }
 
 .section-dos ul {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 15px;
     font-size: 15px;
     list-style-type: none;
     line-height: 17px;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.section-dos li {
+    color: #000;
 }
 
 
@@ -140,7 +155,6 @@ nav a {
         align-items: center;
         justify-content: flex-end;
     }
-
     
     .titulo-dos { 
         font-size: 15px;
@@ -193,6 +207,17 @@ nav a {
         justify-content: flex-end;
     }
 
+    .section-uno-abajo {
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .section-uno-abajodos {
+        display: flex;
+        flex-direction: column;
+    }
     
     .titulo-dos { 
         font-size: 15px;
