@@ -57,8 +57,11 @@ nav a {
 }
 
 .imagen-uno img {
+    display: block;
     transition:all 0.2s ease-in-out;
     width: 100%;
+    max-width: 400px;
+    margin: auto;
 }
 
 .imagen-uno img:hover {
@@ -141,6 +144,56 @@ nav a {
 .section-tres ul {
     font-size: 17px;
     list-style-type: square;
+}
+
+
+
+
+.nosotros {
+    background-color: #232975;
+}
+
+.quienes {
+    text-align: center;
+    font-size: 17px;
+    color: white;
+}
+
+.nosotros-uno {
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+
+
+
+.contacto {
+    background-color: wheat;
+}
+
+.contacto-titulo {
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
+
+.contacto-todo {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.formulario {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.contacto-info li {
+    list-style-type: square;
+    padding-right: 10px;
 }
 
 
@@ -258,6 +311,13 @@ nav a {
         margin: auto;
     }
 
+    .contacto-todo {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+    }
+
+
 }
 
 @media (min-width: 1200px) {
@@ -342,7 +402,7 @@ nav a {
 
 
 
-.alquiler {
+/* .alquiler {
     background-color: white;
 }
 
@@ -361,55 +421,7 @@ nav a {
 
 .alquiler-productos li {
     list-style-type: square;
-}
-
-
-
-
-.nosotros {
-    background-color: #232975;
-}
-
-.quienes {
-    text-align: center;
-    font-size: 17px;
-    color: white;
-}
-
-.nosotros-uno {
-    color: white;
-    font-size: 17px;
-}
-
-
-
-
-
-
-.contacto {
-    background-color: wheat;
-}
-
-.contacto-titulo {
-    color: black;
-    font-size: 17px;
-    text-align: center;
-}
-
-.contacto-todo {
-    display: flex;
-    align-items: center;
-}
-
-.formulario {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-}
-
-.contacto-info li {
-    list-style-type: square;
-}
+} */
 
 
 
