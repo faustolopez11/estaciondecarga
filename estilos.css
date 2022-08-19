@@ -1,0 +1,203 @@
+.menu {
+  width: 100%;
+  display: flex;
+  background-image: linear-gradient(to left, black 0%, black 35%, transparent 100%); }
+  .menu .logo {
+    width: 60px;
+    margin: auto; }
+    .menu .logo img {
+      width: 100%; }
+  .menu .menu-contenido {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end; }
+    .menu .menu-contenido ul {
+      display: flex;
+      column-gap: 10px;
+      list-style: none; }
+    .menu .menu-contenido a {
+      text-decoration: none;
+      color: white; }
+
+.section-uno {
+  background-color: white;
+  color: black; }
+  .section-uno .titulo-uno {
+    font-size: 20px;
+    background-color: #232975;
+    text-align: center;
+    margin: auto; }
+  .section-uno .section-uno-abajo .imagen-uno img {
+    display: block;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    max-width: 400px;
+    margin: auto; }
+  .section-uno .section-uno-abajo .imagen-uno img:hover {
+    transform: rotate(-12deg) scale(1.2); }
+  .section-uno .section-uno-abajo .titulo-dos {
+    font-size: 15px;
+    text-align: center; }
+  .section-uno .section-uno-abajo .parrafo-uno {
+    font-size: 15px;
+    line-height: 17px;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+.section-dos {
+  background-color: #232975;
+  color: white; }
+  .section-dos .titulo-tres {
+    text-align: center;
+    font-size: 18px; }
+  .section-dos ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 15px;
+    font-size: 15px;
+    list-style-type: none;
+    line-height: 17px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .section-dos li {
+    color: black; }
+
+.section-tres {
+  background-color: white;
+  color: black;
+  font-size: 17px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "titulo imagen" "servicio imagen"; }
+  .section-tres div {
+    display: flex;
+    align-items: center; }
+  .section-tres .grid1 {
+    grid-area: titulo; }
+  .section-tres .grid2 {
+    grid-area: servicio; }
+  .section-tres .grid3 {
+    grid-area: imagen; }
+  .section-tres ul {
+    font-size: 17px;
+    list-style-type: square; }
+
+.nosotros {
+  background-color: #232975; }
+  .nosotros .quienes {
+    text-align: center;
+    font-size: 17px;
+    color: white; }
+  .nosotros .nosotros-uno {
+    color: white;
+    font-size: 17px;
+    text-align: center; }
+
+.contacto {
+  background-color: wheat; }
+  .contacto .contacto-titulo {
+    color: black;
+    font-size: 17px;
+    text-align: center; }
+  .contacto .contacto-todo {
+    display: flex;
+    align-items: center;
+    margin: auto; }
+    .contacto .contacto-todo .formulario {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1; }
+    .contacto .contacto-todo .contacto-info li {
+      list-style-type: square;
+      padding-right: 10px; }
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center; }
+  footer ul {
+    list-style: none; }
+  footer a {
+    text-decoration: none;
+    color: white; }
+
+@media (min-width: 767px) {
+  .menu-contenido {
+    width: 100%;
+    max-width: 500px;
+    margin: auto; }
+  .titulo-dos {
+    width: 100%;
+    max-width: 600px;
+    margin: auto; }
+  .parrafo-uno {
+    width: 100%;
+    max-width: 600px;
+    margin: auto; }
+  .section-tres {
+    width: 100%;
+    max-width: 600px;
+    margin: auto; }
+  .section-dos ul {
+    width: 100%;
+    max-width: 600px;
+    margin: auto; } }
+
+@media (min-width: 992px) {
+  .menu-contenido {
+    width: 100%;
+    max-width: 500px;
+    margin: auto; }
+  .section-uno-abajo {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .section-uno-abajodos {
+    display: flex;
+    flex-direction: column; }
+  .titulo-dos {
+    width: 100%;
+    max-width: 800px;
+    margin: auto; }
+  .parrafo-uno {
+    width: 100%;
+    max-width: 800px;
+    margin: auto; }
+  .section-tres {
+    width: 100%;
+    max-width: 800px;
+    margin: auto; }
+  .section-dos ul {
+    width: 100%;
+    max-width: 660px;
+    margin: auto; }
+  .contacto-todo {
+    width: 100%;
+    max-width: 600px; } }
+
+@media (min-width: 1200px) {
+  .menu-contenido {
+    width: 100%;
+    max-width: 500px;
+    margin: auto; }
+  .titulo-dos {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto; }
+  .parrafo-uno {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto; }
+  .section-tres {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto; }
+  .section-dos ul {
+    width: 100%;
+    max-width: 860px;
+    margin: auto; } }
