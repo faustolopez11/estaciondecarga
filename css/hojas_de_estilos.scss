@@ -1,5 +1,10 @@
 $blanco: white;
 $negro: black;
+@mixin movile {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
 
 
 .menu {
@@ -54,10 +59,10 @@ $negro: black;
                 width: 100%;
                 max-width: 400px;
                 margin: auto;
-            }
 
-            img:hover {
-                transform: rotate(-12deg) scale(1.2);
+                &:hover {
+                    transform: rotate(-12deg) scale(1.2);
+                }
             }
         }
 
@@ -195,33 +200,23 @@ footer {
 
 @media (min-width: 767px) {
     .menu-contenido {
-        width: 100%;
-        max-width: 500px;
-        margin: auto;
+        @include movile;
     }
     
     .titulo-dos { 
-        width: 100%;
-        max-width: 600px;
-        margin: auto;
+        @include movile;
     }
 
     .parrafo-uno {
-        width: 100%;
-        max-width: 600px;
-        margin: auto;
+        @include movile;
     }
 
     .section-tres {
-        width: 100%;
-        max-width: 600px;
-        margin: auto;
+        @include movile;
     }
     
     .section-dos ul {
-        width: 100%;
-        max-width: 600px;
-        margin: auto;
+        @include movile;
     }
 }    
 
